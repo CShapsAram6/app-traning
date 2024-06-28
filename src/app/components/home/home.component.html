@@ -1,0 +1,10 @@
+<div class="p-5 d-flex flex-wrap justify-content-between gap-2">
+    <div class="card" style="width: 18rem;" *ngFor="let item of listProducts">
+        <img src="https://localhost:7041/api/Images/images-detal/{{item.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"> {{item.name}} </h5>
+            <p class="card-text"> {{item.price}} </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
